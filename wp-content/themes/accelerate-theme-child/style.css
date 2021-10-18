@@ -22,6 +22,7 @@ Text Domain:  accelerate-theme-child
 	background: none repeat scroll 0 0 #45ac9d;
 }
 
+/*Blog Post on Homepage */
 .blog-post h4 {
   font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
   color: #a6a6a6;
@@ -45,3 +46,104 @@ Text Domain:  accelerate-theme-child
     float: left;
     margin-bottom: 2em;
   }
+
+/* Featured work on Homepage */
+.featured-work .site-content h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.homepage-featured-work {
+  margin-left: 0;
+  padding-top:3em;
+}
+
+li.individual-featured-work {
+  list-style-type: none;
+}
+
+.individual-featured-work figure img {
+  width: 35%;
+}
+
+.individual-featured-work h3 {
+  line-height: 0;
+  padding-bottom: 3em;
+  width: 35%;
+  text-align: center;
+}
+
+.individual-featured-work a {
+
+}
+
+  /*Case Studies */
+  aside.case-study-sidebar {
+    float:left;
+    width:300px;
+    padding:60px 0px 10px 0px;
+  }
+
+  .case-study-sidebar h4 {
+    margin:0;
+    font-size: .65em;
+    line-height: 3em;
+  }
+
+  .case-study-sidebar h2 {
+    line-height:1em;
+    font-size: 1.25em;
+  }
+
+  div.case-study-images {
+    float:left;
+    width:600px;
+    line-height: 4em;
+    padding-top: 2em;
+  }
+
+  div.case-study-images a {
+    line-height:4em;
+  }
+
+  /*Archive Case Study */
+  div.case-study-images {
+      text-align: center;
+      margin-left: 50px;
+}
+
+/* Single Case Studies */
+.left span {
+  font-weight:bold;
+}
+
+/* footer */
+#menu-social-media-nav {
+  list-style-type: none;
+  display: flex;
+}
+
+#menu-social-media-nav span {
+  display: none;
+}
+
+i._mi._before.dashicons.dashicons-facebook-alt,
+i._mi._before.dashicons.dashicons-twitter,
+i._mi._before.fa.fa-linkedin {
+    background-color: #656565;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height:20px;
+    margin:5px;
+}
+
+i._mi._before.dashicons.dashicons-twitter,
+i._mi._before.dashicons.dashicons-facebook-alt {
+    padding-top: 2px;
+}
+
+i._mi._before.fa.fa-linkedin {
+    padding-top: 2px;
+    padding-left: 4px;
+}
