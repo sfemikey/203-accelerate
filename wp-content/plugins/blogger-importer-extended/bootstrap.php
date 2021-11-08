@@ -4,7 +4,7 @@ Plugin Name: Blogger Importer Extended
 Plugin URI: https://wordpress.org/plugins/blogger-importer-extended/
 Description: The only plugin you need to move from Blogger to WordPress. Import all your content and setup 301 redirects automatically.
 Author: pipdig
-Version: 3.1.0
+Version: 3.1.1
 Author URI: https://www.pipdig.co/
 License: GPLv2 or later
 Text Domain: blogger-importer-extended
@@ -28,13 +28,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 if (!defined('ABSPATH')) die;
 
-define('BIE_VER', '3.1.0');
+define('BIE_VER', '3.1.1');
 define('BIE_DIR', plugin_dir_path(__FILE__));
 define('BIE_PATH', plugin_dir_url(__FILE__));
 
  // Wait time between import batches
 if (!defined('BIE_WAIT_TIME')) {
-	define('BIE_WAIT_TIME', 2000);
+	define('BIE_WAIT_TIME', 1750);
 }
 
 include(BIE_DIR.'settings.php');
@@ -806,7 +806,7 @@ add_action('wp_ajax_bie_progress_ajax', function() {
 			
 			$insert_post = array(
 				'post_type' => 'post',
-				'post_date' => $item->published,
+				'post_date_gmt' => $item->published,
 				'post_content' => '',
 				'post_title' => $item->title,
 				'post_status' => 'publish',
@@ -901,7 +901,7 @@ add_action('wp_ajax_bie_progress_ajax', function() {
 					
 					$insert_post = array(
 						'post_type' => 'page',
-						'post_date' => $item->published,
+						'post_date_gmt' => $item->published,
 						'post_content' => '',
 						'post_title' => $item->title,
 						'post_status' => 'publish',
@@ -1230,7 +1230,7 @@ function pipdig_blogger_process_content($post_id, $content, $post_date, $skip_im
 				$filename = rtrim($file['name'], $file_ext).$file_ext;
 				
 				$image_id = media_handle_sideload($file, $post_id, $filename, array('post_date' => $post_date, 'post_author' => $author_id));
-								
+				
 				if (!is_wp_error($image_id)) {
 					
 					$attachment = wp_get_attachment_image_src($image_id, 'large');

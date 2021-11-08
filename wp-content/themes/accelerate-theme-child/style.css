@@ -32,6 +32,7 @@ Text Domain:  accelerate-theme-child
 
 .blog-post h3 {
   font-size: 1.5em;
+  margin-top: 30px;
 }
 
 .read-more-link {
@@ -42,9 +43,10 @@ Text Domain:  accelerate-theme-child
 }
 
   .blog-post {
-    width: 50%;
+    width: 100%;
     float: left;
     margin-bottom: 2em;
+    columns: 200px 2;
   }
 
 /* Featured work on Homepage */
@@ -62,8 +64,9 @@ li.individual-featured-work {
   list-style-type: none;
 }
 
-.individual-featured-work figure img {
-  width: 35%;
+li.individual-featured-work figure img {
+  max-width: 800px;
+  margin: 0 20px;
 }
 
 .individual-featured-work h3 {
@@ -95,18 +98,31 @@ li.individual-featured-work {
     font-size: 1.25em;
   }
 
-  div.case-study-images {
+  div.case-study-images img {
     float:left;
-    width:600px;
     line-height: 4em;
     padding-top: 2em;
+  }
+
+  img.attachment-full.size-full {
+    max-width: 80%;
+    float:right;
   }
 
   div.case-study-images a {
     line-height:4em;
   }
 
+  .content {
+    padding-bottom:3em;
+  }
+
   /*Archive Case Study */
+  .content-page {
+    width:100%;
+    padding-bottom:3em;
+  }
+
   div.case-study-images {
       text-align: center;
       margin-left: 50px;
@@ -146,4 +162,215 @@ i._mi._before.dashicons.dashicons-facebook-alt {
 i._mi._before.fa.fa-linkedin {
     padding-top: 2px;
     padding-left: 4px;
+}
+
+/*Contact Us Form */
+.main-content {
+  margin: 0 10em 0 10em;
+}
+
+.main-content h2 {
+  font-size: 1.75em;
+  font-family:'Open Sans';
+  margin-top: 1em;
+  margin-bottom:0;
+}
+.main-content p {
+  font-size: 1em;
+  padding-bottom: 1.75em;
+  margin-top: 0;
+}
+
+.nf-form-fields-required,
+span.ninja-forms-req-symbol {
+  display:none;
+}
+
+div#nf-field-1-container {
+    display: inline-table;
+    width:50%;
+}
+
+div#nf-field-1-wrap {
+  width: 100%;
+  float: left;
+  margin-bottom: 1em;
+}
+
+label#nf-label-field-1,
+label#nf-label-field-2,
+label#nf-label-field-3 {
+  font-size:.75em;
+}
+
+div#nf-field-2-container,
+.field-wrap email-wrap {
+  float:right;
+  width:47%;
+  margin-bottom:1em;
+}
+
+input#nf-field-1,
+input#nf-field-2,
+textarea#nf-field-3 {
+  background: #fff;
+  border: 1px solid #b3a9a9;
+}
+
+input#nf-field-4 {
+    background: #44a694;
+    color: #fff;
+    width: 35%;
+    float: right;
+}
+
+/*ABOUT PAGE */
+#primary.hero-content {
+  height: 550px;
+}
+
+#primary.home-page.hero-content p {
+  padding-bottom:0;
+}
+
+.hero-main-content p {
+  font-size: 1.55em;
+  color: #fff;
+  width: 58%;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h4 {
+  text-transform: uppercase;
+}
+
+.heading p {
+  width: 55%;
+  font-size: 1em;
+}
+
+li.each-services,
+li.each-services1 {
+  list-style-type: none;
+  display: flex;
+  padding-top: 3em;
+}
+
+.each-services1 figure, img {
+  height: auto;
+  max-width:200px;
+  padding-top:3em;
+}
+
+.about figure, img {
+  margin:auto;
+  padding-top:10px;
+}
+
+.serv1 {
+  padding-left: 5%;
+}
+
+.serv2 {
+  width: 70%;
+}
+
+/*Navigation */
+.about div.site-content {
+  padding-bottom:3em;
+}
+
+#navigation div.container {
+    display: -webkit-inline-box;
+    width: 50%;
+    margin: 25px;
+}
+
+#navigation div.container p {
+  font-weight:bold;
+}
+
+/*Blog */
+section.index-page div.main-content {
+  margin:0;
+}
+
+/*404 Page */
+#primary.main-content h2,
+.has-text-align-center {
+  font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+  font-weight:bold;
+}
+
+p.has-text-align-center.has-large-font-size {
+  font-family: 'Londrina Solid';
+  font-size: 2.25em;
+  padding-bottom:1em;
+  line-height:normal;
+}
+
+.wp-block-image {
+    margin: 0 0 2em;
+}
+
+/*homepage sidebar */
+.blog-post p {
+  padding: 0!important;
+}
+
+div#secondary.widget-area {
+  padding-top:40px;
+  margin-left:50px;
+}
+
+#block-12 h2 {
+  font-weight: bolder;
+  text-transform:uppercase;
+  font-family: 'Montserrat';
+  color: darkgray;
+  font-size: 1em;
+  margin-top:0;
+}
+
+#block-13 h2 {
+  font-weight:bold;
+  font-size:1.5em;
+  margin-top: 20px;
+}
+
+#block-14 p {
+  padding:10px;
+  margin:3px;
+}
+
+#ctf .ctf-item:first-child {
+    padding: 0;
+    border-top: none;
+    margin-bottom:2em;
+}
+
+div#ctf {
+    padding-bottom: 4em;
+}
+
+#a.ctf-more {
+  background:#fff;
+}
+
+#ctf #ctf-more {
+  text-align:left;
+  background:none;
+}
+
+.ctf-more span {
+  color:#45ac9d;
+  font-weight:bold;
+}
+
+/*Blog Post */
+.site-content .main-content {
+  margin:0;
 }

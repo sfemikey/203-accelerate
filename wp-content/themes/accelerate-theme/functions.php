@@ -48,6 +48,7 @@ add_action( 'after_setup_theme', 'accelerate_setup' );
 function accelerate_scripts() {
 	wp_enqueue_style( 'accelerate-style', get_stylesheet_uri() );
     wp_enqueue_style( 'accelerate-google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,600,600i,700,700i' );
+		  wp_enqueue_style( 'accelerate-child-google-fonts', '//fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&display=swap" rel="stylesheet">' );
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_scripts' );
 

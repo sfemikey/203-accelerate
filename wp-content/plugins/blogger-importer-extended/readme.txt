@@ -2,7 +2,7 @@
 Contributors: pipdig
 Tags: blogger, blogspot, importer
 Requires at least: 4.9
-Tested up to: 5.7
+Tested up to: 5.8
 Requires PHP: 7.0
 Stable tag: trunk
 Donate link: https://www.pipdig.co/shop/blogger-importer-plugin/
@@ -76,6 +76,10 @@ This plugin connects to your Blogger/Blogspot blog via the Google Blogger API. W
 3. Success!
 
 == Changelog ==
+
+= 3.1.1 =
+* Release date: 01 November 2021.
+* Handle new date formatting from Blogger by using UTC as default.
 
 = 3.1.0 =
 * Release date: 08 October 2021.
